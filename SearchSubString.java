@@ -14,29 +14,31 @@ class searchSubString {
         String str1 = "Hello shanghai, I am Roshan";
         String str2 = "osha";
         
-        subString(str1, str2);
+        int occurence = subString(str1, str2);
+        System.out.println(occurence);
     }
     
-    public static void subString(String mainString, String subString) {
+    public static int subString(String mainString, String subString) {
         
         char[] mainStringArray = mainString.toCharArray();
         char[] subStringArray = subString.toCharArray();
-                   
-        for(int index = 0; index < mainStringArray.length - subStringArray.length && subStringArray.length < mainStringArray.length; index++ ) {
+        int index = 0;
+        
+        for( index = 0; index < mainStringArray.length - subStringArray.length && subStringArray.length < mainStringArray.length; index++ ) {
            
             int checkIndex = 0;
             for ( int subIndex = index; subIndex < subStringArray.length; subIndex ++ ) {
           
-            	if( subStringArray[checkIndex] == mainStringArray[subIndex] ) {
-            		
-            		checkIndex++;    
-            	}
+            	if( subStringArray[checkIndex] == mainStringArray[subIndex] )
+            		checkIndex++; 
                
             	else 
             	    break;
             }
             
         }
-	System.out.println( "The first occurence of Index " +  Index );
+        
+        index--;
+	return index;
     }
-} 
+}
