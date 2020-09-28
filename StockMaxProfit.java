@@ -32,7 +32,7 @@ class StockMaxProfit {
         
         for( int arrayIndex = 0; arrayIndex < stockArray.length; arrayIndex++ ) {
             
-            if( min > stockArray[arrayIndex] ) {
+            if( min > stockArray[arrayIndex]) {
         
                 min = stockArray[arrayIndex];
                 minIndex = arrayIndex;  
