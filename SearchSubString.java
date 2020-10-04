@@ -31,7 +31,6 @@ class searchSubString {
           
             	if( subStringArray[checkIndex] == mainStringArray[subIndex] )
             		checkIndex++; 
-               
             	else 
             	    break;
             }
