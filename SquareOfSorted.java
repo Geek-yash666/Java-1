@@ -28,16 +28,13 @@ class SquareOfSorted {
 	                squareArray[squareArrayIndex] = inputArray[leftPtr] * inputArray[leftPtr];
 	                leftPtr++;
 	                squareArrayIndex--;
-	            }
-	            
+	            }	            
 	            else {
 	                
 	                squareArray[squareArrayIndex] = inputArray[rightPtr] * inputArray[rightPtr];
 	                rightPtr--;
 	                squareArrayIndex--;
-	            }
-	            
-	            
+	            }           
 	       }
 	       
 	       return squareArray;
