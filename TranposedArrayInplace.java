@@ -21,12 +21,21 @@ class TransposeArray {
         int[][] transposedArray2 = transposeArray(testTwo);
         printArray(transposedArray2);
         
-        int[][] testThree = { }; //empty case
+        int[][] testThree = { {1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12} }; // Rectangular array
         int[][] transposedArray3 = transposeArray(testThree);
         printArray(transposedArray3);
+        
+        int[][] testFour = { }; // Empty case
+        int[][] transposedArray4 = transposeArray(testFour);
+        printArray(transposedArray4);
     }   
 
     public static int[][] transposeArray(int[][] inputArray) {
+        
+        int[][] errorArray = { {0, 0}, {0, 0} };
+        
+        if ( inputArray.length != inputArray[0].length ) 
+            return errorArray;
     
         for ( int row = 0; row < inputArray.length && inputArray.length == inputArray[0].length; row++ ) { 
     
@@ -40,7 +49,7 @@ class TransposeArray {
                 }    
             }
         }
-
+        
         return inputArray;
     }   
 
