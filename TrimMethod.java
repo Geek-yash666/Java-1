@@ -30,7 +30,6 @@ class TrimMethod {
                 leadingIndex = index;
                 break;
             }
-
         }
 
         // 
@@ -41,7 +40,6 @@ class TrimMethod {
                 trailingIndex = index;
                 break;
             }
-
         }
 
         char[] outputArray  = new char [charArray.length];
@@ -51,5 +49,11 @@ class TrimMethod {
             outputArray[inputIndex] = charArray[index];
             inputIndex++;
         }
+        String outputString = new String(outputArray);
+        return outputString;
+    }
+
+}
+
 
 
