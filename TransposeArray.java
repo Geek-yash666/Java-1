@@ -31,8 +31,6 @@ class TransposeArray {
             }
         }
         
-        System.out.print(Arrays.deepToString(transposedArray));
-        
+        System.out.print(Arrays.deepToString(transposedArray)); 
     }
-        
 }
